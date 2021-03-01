@@ -43,6 +43,7 @@ h1{
 p, h2{
   color:#fff;
   font-size:46px;
+  font-weight: bold;
 }
 #player1, #computer{
   color:red;
