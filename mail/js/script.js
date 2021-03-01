@@ -13,8 +13,6 @@ var mailVerificata;
 
 var mailUtente = prompt("Inserisci la tua mail");
 
-
-
 // 3 verifico che la mail sia presente in lista
 
 for ( var i = 0; i < listaMail.length; i++ ) {
