@@ -7,7 +7,7 @@ stampa un messaggio appropriato sull’esito del controllo.*/
 
 var listaMail = ["a.fico@gmail.com", "fico@hotmail.com", "alfred@yahoo.com"];
 
-
+var mailVerificata;
 
 // 2 creo variabile e prompt per richiedere mail all'utente
 
@@ -17,23 +17,23 @@ var mailUtente = prompt("Inserisci la tua mail");
 
 // 3 verifico che la mail sia presente in lista
 
-for ( i = 0; i < listaMail.length; i++ ) {
+for ( var i = 0; i < listaMail.length; i++ ) {
 
   // creo if per vedere se la mail inserita è quella presente in lista
 
   if ( mailUtente === listaMail[i] ) {
 
-    alert("ok");
+    mailVerificata = mailUtente;
 
-  }else {
-
-    alert("no");
-    
   }
-
 
 }
 
+if ( mailVerificata == mailUtente ){
+  alert("la mail è corretta");
+} else{
+  alert("mail non trovata");
+}
 
 
 // document.getElementById("mail").
