@@ -13,6 +13,8 @@ var mailVerificata;
 
 var mailUtente = prompt("Inserisci la tua mail");
 
+document.getElementById("mailinserita").innerHTML = mailUtente;
+
 // 3 verifico che la mail sia presente in lista
 
 for ( var i = 0; i < listaMail.length; i++ ) {
@@ -24,17 +26,21 @@ for ( var i = 0; i < listaMail.length; i++ ) {
     mailVerificata = mailUtente;
 
   }
-
 }
+
+// creo if per tirar fuori variabile da ciclo for
 
 if ( mailVerificata == mailUtente ){
-  alert("la mail è corretta");
+
+  document.getElementById("esitomailyes").innerHTML = "La mail è corretta";
+
 } else{
-  alert("mail non trovata");
+
+  document.getElementById("esitomailno").innerHTML = "La mail non è stata trovata";
+
 }
 
 
-// document.getElementById("mail").
 
 
 // 4 stampo messaggio sull'esito
