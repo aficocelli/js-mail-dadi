@@ -17,6 +17,26 @@ var mailUtente = prompt("Inserisci la tua mail");
 
 // 3 verifico che la mail sia presente in lista
 
+for ( i = 0; i < listaMail.length; i++ ) {
+
+  // creo if per vedere se la mail inserita è quella presente in lista
+
+  if ( mailUtente === listaMail[i] ) {
+
+    alert("ok");
+
+  }else {
+
+    alert("no");
+    
+  }
+
+
+}
+
+
+
+// document.getElementById("mail").
 
 
 // 4 stampo messaggio sull'esito
