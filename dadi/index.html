@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gioco Dadi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <header>
+      <h1>DICE <i class="fas fa-dice-six"></i> GAME</h1>
+    </header>
+    <div class="container">
+      <div class="box box1">
+        <div class="testo">
+          <p id="nomeGiocatore"></p>
+          <p id="player1"></p>
+        </div>
+        <h2 id="esito1"></h2>
+      </div>
 
+      <div class="box box2">
+        <div class="testo">
+          <p>CPU</p>
+          <p id="computer"></p>
+        </div>
+        <h2 id="esito2"></h2>
+      </div>
+    </div>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
